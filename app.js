@@ -41,7 +41,7 @@ async function  logProrgess(epoch,logs){
 
 function predict(){
     let data=[0.5,0.5]
-    const input=tf.tensor2d(data,[1,2]);
+    const input=tf.tensor2d([data],[1,2]);
     let prediction=model.predict(input);
     alert(prediction);
     //const index=model.predict(input).argMax(-1).dataSync();
